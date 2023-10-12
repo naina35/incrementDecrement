@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="content"></div>
+<div id ="button" styles="height:100px"><button id="buttonnew">increment</button></div>
+<div id ="button" styles="height:100px"><button id="buttonold">decrement</button>
+</div>
+<script >
+    var counter=0;
+var contenT=counter;
+
+const button=document.getElementById("buttonnew");
+const buttono=document.getElementById("buttonold");
+const showtext=document.getElementById("content");
+showtext.innerText =counter;
+button.addEventListener('click',addcounter);
+buttono.addEventListener('click',minuscounter);
+function addcounter()
+{
+    counter=counter+1;
+    showtext.innerText =counter;
+}
+function minuscounter()
+{
+    counter=counter-1;
+    showtext.innerText =counter;
+}
+</script>
+</body>
+</html>
